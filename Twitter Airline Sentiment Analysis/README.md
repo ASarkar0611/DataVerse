@@ -50,13 +50,30 @@ It demonstrates my ability to:
 
 ## 🏆 Results
 
-To be added...
+Metric	            |Logistic Regression	| Naive Bayes
+--------------------|---------------------|------------
+Accuracy	          | 63%                 |	63%
+Weighted Precision	| 75%                 |	75%
+Weighted Recall     |	63%                 |	63%
+Weighted F1-score   |	50%                 |	50%
 
 ---
 
+## Per-class Performance
+
+Sentiment	| Precision |	Recall | F1-score | Support
+----------|-----------|--------|----------|---------
+Negative  |	0.63	    | 1.00	 | 0.77	    | 1835
+Neutral	  | 1.00      |	0.00   | 0.01     |	620
+Positive  | 0.91      |	0.04   | 0.08	    | 473
+
 ## 🌟 Key Insights
 
-To be added...
+1. Negative tweets (~62%) are more than positive tweets in the dataset. The model always predicts “negative”, which is why recall = 1.0 for negative sentiment.
+2. Neutral tweets are completely misclassified:
+Recall = 0.0 → the model never predicts "neutral".
+3. Positive tweets are rarely detected:
+Recall = 0.04 → very poor performance for positive sentiment.
 
 ---
 
