@@ -49,32 +49,15 @@ It demonstrates my ability to:
 
 ---
 
-## 🏆 Results
+## 🌟 Key Takeaways
 
-Metric	            |Logistic Regression	| Naive Bayes
---------------------|---------------------|------------
-Accuracy	          | 63%                 |	63%
-Weighted Precision	| 75%                 |	75%
-Weighted Recall     |	63%                 |	63%
-Weighted F1-score   |	50%                 |	50%
-
----
-
-## Per-class Performance
-
-Sentiment	| Precision |	Recall | F1-score | Support
-----------|-----------|--------|----------|---------
-Negative  |	0.63	    | 1.00	 | 0.77	    | 1835
-Neutral	  | 1.00      |	0.00   | 0.01     |	620
-Positive  | 0.91      |	0.04   | 0.08	    | 473
-
-## 🌟 Key Insights
-
-1. Negative tweets (~62%) are more than positive tweets in the dataset. The model always predicts “negative”, which is why recall = 1.0 for negative sentiment.
-2. Neutral tweets are completely misclassified:
-Recall = 0.0 → the model never predicts "neutral".
-3. Positive tweets are rarely detected:
-Recall = 0.04 → very poor performance for positive sentiment.
+- Dominance of negative tweets skews model predictions heavily toward "**negative**" sentiment.
+- Neutral and positive tweets are consistently underpredicted across all models.
+- SMOTE and class weighting improved results slightly, but model bias remains.
+- Among the three:
+    - Logistic Regression and XGBoost → Best overall accuracy (64% each).
+    - Naive Bayes → Best at predicting neutral tweets but weak overall.
+- Macro F1 scores (~30%) indicate poor balance in performance across classes.
 
 ---
 
