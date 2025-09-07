@@ -3,6 +3,7 @@
 ## 📌 Project Overview
 Airlines receive constant customer feedback on Twitter — both positive and negative.  
 This project performs **sentiment analysis** on tweets about six major U.S. airlines to classify sentiments as **positive**, **neutral**, or **negative**.  
+The Airlines are - United, US Airways, American, Southwest, Delta, Virgin America
 
 It demonstrates my ability to:
 - Perform **data cleaning** and **NLP preprocessing**
